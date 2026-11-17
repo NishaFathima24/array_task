@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let str="madam";
+    let reverse="";
+    for (let i=str.length- 1; i>=0; i--){
+        reverse=reverse+str[i];
+    }
+    if(str===reverse){
+        console.log("Palindrome");
+    }
+    else{
+        console.log("Not a Palindrome");
+    }
+
+    let str1="silent";
+    let str2="listen";
+
+    let a=str1.split("").sort().join("");
+    let b=str2.split("").sort().join("");
+    if(a===b){
+        console.log("Anagram");
+    }
+    else{
+        console.log("Not anagaram");
+    }
+
+
+    let strr="javascript";
+    let reverse1="";
+    for(let i=strr.length-1;i>=1;i--){
+        reverse +=str[i];
+    }
+    console.log(reverse);
+
+
+let num = 7;
+let count = 0;
+
+for (let i = 1; i <= num; i++) {
+    if (num % i === 0) {
+        count++;
+    }
+}
+
+if (count === 2) {
+    console.log("Prime Number");
+} else {
+    console.log("Not a Prime Number");
+}
+
+
+
+let a1 = 10;
+let b1 = 20;
+
+a1 = a1 + b1;
+b1 = a1 - b1;
+a1 = a1 - b1;
+
+console.log("a =", a);
+console.log("b =", b);
+
+
+let arr = [10, 20, 30, 40, 50];
+
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+
+for (let i=1;i<=100;i++){
+    console.log(i);
+
+if(i===100){
+    break;
+}
+}
+
+
+for(let i=1;i<=11;i++){
+    if(i===5){
+        continue;
+    }
+  console.log(i);
+}
+
+let array = [1, 2, 3, [4, 5, 6], [7, 8, 9]];
+console.log(array[4]);
+
+
+let array1 = [1, 2, 3, [4, 5, 6], [7, 8, 9]];
+
+let result = array1.flat();
+
+console.log(result);
+
+
+let courses = ["BCA", "MCA", "CS Engineering"];
+
+let search = "CS Engineering";
+let found = false;
+
+for (let i = 0; i < courses.length; i++) {
+
+    if (courses[i] === search) {
+        found = true;
+        break;
+    }
+}
+
+if (found) {
+    console.log("Course Found");
+} else {
+    console.log("Course Not Found");
+}
+
+
+</script>
+</html>
